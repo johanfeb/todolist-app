@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+:root {
+  --bg: #f4f0f1;
+  --orange: #e94536;
+  --blue: #130f31;
+  --grey: #69696f;
+  --darkgrey: #45454c;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", cursive;
+}
+
+body {
+  background-color: var(--bg);
+  margin-top: 3rem;
+}
+
+.App {
+  text-align: center;
+  margin: 0 25%;
+}
+
+h1 {
+  color: var(--blue);
+  margin-bottom: 20px;
+}
+
+.addTodo {
+  display: flex;
+  width: 100%;
+  gap: 10px;
+}
+
+.addTodo .input-todo {
+  width: 92%;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid var(--grey);
+  padding: 4px 10px;
+}
+
+.addTodo .btn-add {
+  font-size: 0.8rem;
+  padding: 2px 15px;
+  background-color: var(--grey);
+  color: white;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  border: none;
+}
+
+.addTodo .btn-add:hover{
+  background-color: var(--orange);
+}
+
+.displaytodos .buttons {
+  margin: 16px 0;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.displaytodos .buttons button {
+  background-color: white;
+  color: var(--darkgrey);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+  padding: 0.3rem 1.6rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.displaytodos .buttons button:hover {
+  background-color: var(--orange);
+  color: white;
+  font-weight: normal;
+}
+
+/* Todo Item */
+.card {
+  display: flex;
+  margin: 10px 0;
+  gap: 8px;
+  border: 1px solid grey;
+  background-color: white;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+  padding: 8px;
+  border-radius: 5px;
+}
+.card .btn-left {
+  width: 30px;
+  border-radius: 5px;
+}
+
+.card .btn-right button {
+  background-color: white;
+  padding: 5px;
+  border: none;
+}
+
+.icon-edit {
+  font-size: 20px;
+  color: var(--darkgrey);
+  background-color: white;
+}
+
+.icon-delete {
+  font-size: 20px;
+  color: var(--darkgrey);
+  background-color: white;
+}
+
+.text-item {
+  width: 100%;
+  color: var(--darkgrey);
+  background-color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  resize: none;
+}
+
+.todo-item {
+  display: flex;
+  align-items: center;
+}
+
+.btn-right {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+}
